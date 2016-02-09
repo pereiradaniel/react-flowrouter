@@ -1,4 +1,8 @@
 Login = React.createClass({
+  handleSubmit( event ) {
+  	event.preventDefault();
+  },
+
   render() {
     return (
       <div className="row">
