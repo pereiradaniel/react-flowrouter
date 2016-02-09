@@ -1,4 +1,7 @@
 Login = React.createClass({
+  componentDidMount() {
+  	Modules.client.login( { form: "#login" } );
+  },
   handleSubmit( event ) {
   	event.preventDefault();
   },
