@@ -34,8 +34,8 @@ let validation = ( template ) => {
 
 let _handleSignup = ( template ) => {
   let user = {
-    email: template.find( '[name="emailAddress"]' ).value,
-    password: template.find( '[name="password"]' ).value
+    email: $( '[name="emailAddress"]' ).val(),
+    password: $( '[name="password"]' ).val()
   };
 
   Accounts.createUser( user, ( error ) => {
