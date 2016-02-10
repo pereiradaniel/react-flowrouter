@@ -1,7 +1,7 @@
 Default = React.createClass({
 	render() {
 		return (
-			<div className="app-root")>
+			<div className="app-root">
 				<AppHeader />
 				<div className="container">
 					{this.props.yield}
